@@ -30,7 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 50px 150px;
-  align-items: center; 
+  align-items: center;
 }
 
 .nav-title {
@@ -46,7 +46,7 @@ nav ul {
   list-style: none;
 }
 
-li > a {
+li>a {
   text-decoration: none;
   margin-right: 2rem;
   color: #424242;
@@ -61,7 +61,7 @@ li > a {
 .banner-container {
   max-width: 700px;
   text-align: center;
-  margin: 0 auto;  
+  margin: 0 auto;
 
 }
 
@@ -69,21 +69,22 @@ li > a {
   font-family: Work Sans;
   font-weight: 600;
   font-size: 40px;
-  
 
 }
-.banner-description{
+
+.banner-description {
   font-family: Work Sans;
   color: #727272;
   padding: 20px;
 }
-.banner-image{
+
+.banner-image {
   width: 62rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  
+
 }
 
 
@@ -91,27 +92,55 @@ li > a {
 
 /* --------- mobile devices ------------ */
 
-@media screen and ( max-width: 576px ) {
-  
-  .banner-image{
+@media screen and (max-width: 576px) {
+
+  .banner-image {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    
+
   }
 
   .nav-container {
-    flex-direction: column; 
-  
+    flex-direction: column;
+
   }
-  .nav-title{
+
+  .nav-title {
     margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: -20px;
   }
 }
+
 /* ---------- medium devices -------- */
 
-@media screen and ( min-width: 576px ) and ( max-width: 960px ) {
-  
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 50px;
+  }
+
+  .nav-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+     
+}
+
+  .banner-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+  }
+
 }
