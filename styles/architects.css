@@ -1,74 +1,117 @@
 /* Work Sans font from google font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;700;800&display=swap');
 
-/* shared styles */
-.btn-primary{
-  background-color: #FF900E;
-  border-radius: 10px;
-  padding: 15px 20px;
-  color: #fff;
-  font-size: 1.2rem;
-  border: 0;
-  cursor: pointer;
-
-}
-
 * {
-  font-family: 'Lato', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* header styles */
-header{
+/* -------- shared style -------- */
+
+.btn-primary {
+  background: #FF900E;
+  color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  border: 0;
+  font-size: 20px;
+
+}
+
+
+
+/* --------- nav styles --------- */
+
+header {
   background: rgba(255, 144, 14, 0.10);
-  padding: 50px 120px;
 }
 
-nav{
+.nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 50px 150px;
+  align-items: center; 
 }
 
-.nav-title{
-  font-size: 2rem;
-  font-weight: 700;
+.nav-title {
   color: #131313;
+  font-family: Work Sans;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 29px;
 }
 
-nav > ul {
+nav ul {
   display: flex;
-}
-
-nav li {
   list-style: none;
-  margin-right: 30px;
-  font-weight: 500;
-  font-size: 1rem;
 }
 
-nav li a{
+li > a {
   text-decoration: none;
+  margin-right: 2rem;
   color: #424242;
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-weight: bold;
+
 }
 
-/* Banner styles */
-.banner-content{
-  max-width: 100%;
+/* ---------- banner styles ---------- */
+
+.banner-container {
+  max-width: 700px;
   text-align: center;
-  margin: 0 auto;
-}
-.banner-title{
-  font-size: 3rem;
-  font-weight: 700;
-  color: #131313;
+  margin: 0 auto;  
+
 }
 
+.banner-title {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 40px;
+  
+
+}
 .banner-description{
+  font-family: Work Sans;
   color: #727272;
+  padding: 20px;
 }
 .banner-image{
-  width: 66.4rem;
-  margin-top: 20px;
+  width: 62rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  
+}
+
+
+/* responsive media queries */
+
+/* --------- mobile devices ------------ */
+
+@media screen and ( max-width: 576px ) {
+  
+  .banner-image{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    
+  }
+
+  .nav-container {
+    flex-direction: column; 
+  
+  }
+  .nav-title{
+    margin-bottom: 20px;
+  }
+}
+/* ---------- medium devices -------- */
+
+@media screen and ( min-width: 576px ) and ( max-width: 960px ) {
+  
 }
