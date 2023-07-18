@@ -21,6 +21,11 @@
     color: #727272;
 }
 
+.section-title {
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
 
 
 /* header styles */
@@ -36,11 +41,6 @@ nav {
     align-items: center;
 }
 
-.nav-title {
-    font-size: 2.8rem;
-    color: #131313;
-    font-weight: 700;
-}
 
 nav>ul {
     display: flex;
@@ -130,15 +130,24 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav, 
+    .teams-container {
         flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    ..teams-content {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 /* medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 
