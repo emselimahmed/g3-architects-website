@@ -207,9 +207,19 @@ main {
 }
 
 
+/* Footer section */
 
-
-
+.footer-section{
+    display: flex;
+    border-radius: 8px;
+    background: #FFF4E7;
+    height: 30vh;
+    justify-content: center;
+    align-items: end;
+}
+.footer-text{
+    font-size: 1.25rem;
+}
 
 
 
@@ -257,6 +267,10 @@ main {
     }
     .ten-years-badge h2{
         font-size: 2rem;
+    }
+    .footer-text{
+        padding: 20px;
+        text-align: center;
     }
 }
 
